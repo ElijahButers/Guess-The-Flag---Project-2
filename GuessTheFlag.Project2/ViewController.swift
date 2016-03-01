@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         button1.layer.borderColor = UIColor.lightGrayColor().CGColor
         button2.layer.borderColor = UIColor.lightGrayColor().CGColor
         button3.layer.borderColor = UIColor.lightGrayColor().CGColor
+        
+        // Generate a random number between 0 and 2
+        
+        correctAnswer = GKRandomSource.sharedRandom().nextIntWithUpperBound(3)
     }
 
     override func didReceiveMemoryWarning() {

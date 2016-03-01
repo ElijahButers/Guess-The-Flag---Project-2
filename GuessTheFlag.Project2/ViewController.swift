@@ -38,6 +38,10 @@ class ViewController: UIViewController {
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
+        
+        button1.layer.borderColor = UIColor.lightGrayColor().CGColor
+        button2.layer.borderColor = UIColor.lightGrayColor().CGColor
+        button3.layer.borderColor = UIColor.lightGrayColor().CGColor
     }
 
     override func didReceiveMemoryWarning() {

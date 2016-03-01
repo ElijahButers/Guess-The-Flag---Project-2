@@ -52,6 +52,16 @@ class ViewController: UIViewController {
     // Actions
 
     @IBAction func buttonTapped(sender: AnyObject) {
+        
+        var title: String
+        
+        if sender.tag == correctAnswer {
+            title = "Correct"
+            score += 1
+        } else {
+            title = "Wrong"
+            score -= 1
+        }
     }
 
 }

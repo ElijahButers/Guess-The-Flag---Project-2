@@ -12,6 +12,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var countries = [String]()
+    var correctAnswer = 0
     var score = 0
     
     // Outlets

@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        countries += ["estonia", "france", "germany", "ireland", "italy","monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
     }
 
     override func didReceiveMemoryWarning() {

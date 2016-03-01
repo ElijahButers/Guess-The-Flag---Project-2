@@ -41,6 +41,11 @@
                             <constraint firstItem="sT5-cd-WVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mrr-pf-c95"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="sT5-cd-WVY" id="CbO-29-msC"/>
+                        <outlet property="button2" destination="cTt-sV-RgX" id="yyL-uu-9y7"/>
+                        <outlet property="button3" destination="AFX-dP-YNC" id="aWk-OC-tNs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

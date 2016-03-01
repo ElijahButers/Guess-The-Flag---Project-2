@@ -28,10 +28,10 @@ class ViewController: UIViewController {
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         
-        askQuestion()
+        askQuestion(nil)
     }
     
-    func askQuestion() {
+    func askQuestion(action: UIAlertAction!) {
         
         // Randomise the order of the countries
         
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
             score -= 1
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is\(score)", preferredStyle: .Alert)
+        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .Alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: askQuestion))
         presentViewController(ac, animated: true, completion: nil)
     }

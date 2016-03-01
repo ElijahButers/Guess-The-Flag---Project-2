@@ -54,6 +54,10 @@ class ViewController: UIViewController {
         // Generate a random number between 0 and 2
         
         correctAnswer = GKRandomSource.sharedRandom().nextIntWithUpperBound(3)
+        
+        // Show the name of a country
+        
+        title = countries[correctAnswer].uppercaseString
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,6 +78,10 @@ class ViewController: UIViewController {
             title = "Wrong"
             score -= 1
         }
+        
+        let ac = UIAlertController(title: title, message: "Your score is\(score)", preferredStyle: .Alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: askQuestion))
+        presentViewController(ac, animated: true, completion: nil)
     }
 
 }

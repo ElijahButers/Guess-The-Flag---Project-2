@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var countries = [String]()
+    var score = 0
+    
     // Outlets
 
     @IBOutlet weak var button1: UIButton!

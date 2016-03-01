@@ -32,6 +32,12 @@ class ViewController: UIViewController {
     
     func askQuestion() {
         
+        // Randomise the order of the countries
+        
+        countries = GKRandomSource.sharedRandom().arrayByShufflingObjectsInArray(countries) as! [String]
+        
+        // Set Images on buttons
+        
         button1.setImage(UIImage(named: countries[0]), forState: .Normal)
         button2.setImage(UIImage(named: countries[1]), forState: .Normal)
         button3.setImage(UIImage(named: countries[2]), forState: .Normal)

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Elijah Buters. All rights reserved.
 //
 
+import GameplayKit
 import UIKit
 
 class ViewController: UIViewController {
